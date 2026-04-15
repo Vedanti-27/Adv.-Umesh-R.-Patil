@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv. Umesh Rajaram Patil | Legal Services</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --navy-blue: #1a2a3a;
+            --gold: #d4af37;
+            --card-bg: #ffffff;
+            --hero-bg: #f4f4f4;
+        }
+
+        [data-bs-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --navy-blue: #0d151d;
+            --gold: #ffcf40;
+            --card-bg: #1e1e1e;
+            --hero-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: var(--navy-blue) !important;
+            border-bottom: 3px solid var(--gold);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--hero-bg);
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+        .btn-gold {
+            background-color: var(--gold);
+            color: #1a2a3a;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-gold:hover {
+            background-color: #c5a028;
+            color: white;
+        }
+
+        /* Cards and Sections */
+        .section-padding { padding: 80px 0; }
+        
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(128,128,128,0.2);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+        }
+
+        .contact-container {
+            background-color: var(--navy-blue);
+            color: white;
+            border-radius: 15px;
+        }
+
+        /* Dark/Light Toggle Switch */
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+        .theme-icon {
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
+
+        footer {
+            background-color: #000;
+            color: #888;
+        }
+    </style>
+</head>
+<body data-bs-theme="light">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Adv. Umesh R. Patil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#practice">Practice Areas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="theme-switch-wrapper">
+                        <i class="fas fa-moon theme-icon" id="themeToggle" title="Toggle Dark/Light Mode"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Fighting for Your Rights and Justice</h1>
+            <p class="lead mb-4">Over 28 years of dedicated legal experience providing strategic, ethical, and results-driven representation.</p>
+            <a href="#contact" class="btn btn-gold btn-lg">Request a Consultation</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">About the Advocate</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <div class="bg-secondary rounded text-white d-flex align-items-center justify-content-center" style="height: 400px;">
+                        <i class="fas fa-user-tie fa-5x"></i>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-gold" style="color: var(--gold);">Adv. Umesh Rajaram Patil <small class="text-muted">B.A. LL.B</small></h3>
+                    <p>Advocate Patil is a highly respected legal professional with a passion for delivering justice. Enrolled with the Bar Council of Maharashtra, he has successfully represented clients in the High Court and District Courts.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Shahaji Law College, Kolhapur Alumni</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Expert in Maharashtra Civil & Criminal Law</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Senior Member of the Local Bar Association</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="practice" class="section-padding bg-opacity-10 bg-secondary">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Practice Areas</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card service-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#civilModal" style="cursor: pointer;">
+                    <i class="fas fa-gavel fa-3x mb-3 text-warning"></i>
+                    <h4>Civil Litigation</h4>
+                    <p class="small text-muted">Property disputes, contracts, and recovery suits.</p>
+                    <span class="text-gold small">Click to learn more</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#criminalModal" style="cursor: pointer;">
+                    <i class="fas fa-shield-alt fa-3x mb-3 text-warning"></i>
+                    <h4>Criminal Defense</h4>
+                    <p class="small text-muted">Bail, trials, appeals, and white-collar crimes.</p>
+                    <span class="text-gold small">Click to learn more</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#familyModal" style="cursor: pointer;">
+                    <i class="fas fa-users fa-3x mb-3 text-warning"></i>
+                    <h4>Family Law</h4>
+                    <p class="small text-muted">Divorce, custody, and domestic matters.</p>
+                    <span class="text-gold small">Click to learn more</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card service-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#corporateModal" style="cursor: pointer;">
+                    <i class="fas fa-building fa-3x mb-3 text-warning"></i>
+                    <h4>Corporate Law</h4>
+                    <p class="small text-muted">Business compliance and commercial disputes.</p>
+                    <span class="text-gold small">Click to learn more</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="civilModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title">Civil Litigation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Advocate Patil provides comprehensive services in civil law, including:</p>
+                <ul>
+                    <li>Property and Real Estate disputes</li>
+                    <li>Money recovery and breach of contract</li>
+                    <li>Special Civil Suits and Appeals</li>
+                    <li>Landlord-Tenant litigation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="criminalModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title">Criminal Defense</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Expert representation in the District and Session courts for:</p>
+                <ul>
+                    <li>Anticipatory and Regular Bail applications</li>
+                    <li>Criminal Trials and Cross-examinations</li>
+                    <li>Quashing of FIRs and Criminal Appeals</li>
+                    <li>Defense against white-collar and economic offenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="familyModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title">Family Law</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Sensitive and strategic legal support for family matters:</p>
+                <ul>
+                    <li>Divorce by Mutual Consent or Contested</li>
+                    <li>Child Custody and Guardianship</li>
+                    <li>Maintenance and Alimony proceedings</li>
+                    <li>Succession and Inheritance claims</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="corporateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: var(--card-bg); color: var(--text-color);">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title">Corporate Law</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Legal solutions for businesses and organizations:</p>
+                <ul>
+                    <li>Drafting and vetting of Business Agreements</li>
+                    <li>MSME and Commercial Court disputes</li>
+                    <li>Labour Law compliance and litigation</li>
+                    <li>Legal notices and recovery for corporate clients</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-container p-5">
+                <h2 class="text-center mb-5" style="color: var(--gold);">Get In Touch</h2>
+                <div class="row text-center text-md-start">
+                    <div class="col-md-4 mb-4">
+                        <h5><i class="fas fa-map-marker-alt me-2"></i> Office Location</h5>
+                        <p>Bawadekar complex,<br>Peth Vadgaon,Kolhapur, Maharashtra - 416112</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5><i class="fas fa-phone me-2"></i> Contact Details</h5>
+                        <p>+91 9823399404<br>urpatiladv@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5><i class="fas fa-clock me-2"></i> Office Hours</h5>
+                        <p>Mon - Fri: 10 AM - 7 PM<br>Sat: 10 AM - 2 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="py-4 text-center">
+        <div class="container">
+            <h5 class="mb-2" style="color: var(--gold); letter-spacing: 1px;">Rajarambapu Institute of Technology, Ishwarpur (Rajaramnagar)
+                Computer Science and Information Technology Department - Vedanti Patil, Vaibhavi Patil, Namrata Kekare, Pallavi Patil, Tanuja Junjwadkar
+            </h5>
+            
+            <p class="mb-1">&copy; 2026 Advocate Umesh Rajaram Patil. All Rights Reserved.</p>
+            <p class="x-small text-muted" style="font-size: 0.75rem;">Disclaimer: This website is for informational purposes only as per Bar Council regulations.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved user preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.setAttribute('data-bs-theme', savedTheme);
+            updateIcon(savedTheme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            body.setAttribute('data-bs-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                themeToggle.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                themeToggle.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>
